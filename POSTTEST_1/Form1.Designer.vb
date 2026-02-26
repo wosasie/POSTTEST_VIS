@@ -22,86 +22,99 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        Label2 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        lblIPS = New Label()
+        lblIPKumulatif = New Label()
+        btnTambah = New Button()
+        btnReset = New Button()
+        txtIPS = New TextBox()
+        txtIPK = New TextBox()
+        lblPredikat = New Label()
         SuspendLayout()
         ' 
-        ' Label1
+        ' lblIPS
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(162, 116)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(86, 20)
-        Label1.TabIndex = 0
-        Label1.Text = "IP Semester"
+        lblIPS.AutoSize = True
+        lblIPS.Location = New Point(153, 142)
+        lblIPS.Name = "lblIPS"
+        lblIPS.Size = New Size(86, 20)
+        lblIPS.TabIndex = 0
+        lblIPS.Text = "IP Semester"
         ' 
-        ' Label2
+        ' lblIPKumulatif
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(162, 241)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(89, 20)
-        Label2.TabIndex = 1
-        Label2.Text = "IP Kumulatif"
+        lblIPKumulatif.AutoSize = True
+        lblIPKumulatif.Location = New Point(153, 267)
+        lblIPKumulatif.Name = "lblIPKumulatif"
+        lblIPKumulatif.Size = New Size(89, 20)
+        lblIPKumulatif.TabIndex = 1
+        lblIPKumulatif.Text = "IP Kumulatif"
         ' 
-        ' Button1
+        ' btnTambah
         ' 
-        Button1.Location = New Point(295, 169)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 2
-        Button1.Text = "Tambah"
-        Button1.UseVisualStyleBackColor = True
+        btnTambah.Location = New Point(286, 199)
+        btnTambah.Name = "btnTambah"
+        btnTambah.Size = New Size(94, 29)
+        btnTambah.TabIndex = 2
+        btnTambah.Text = "Tambah"
+        btnTambah.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' btnReset
         ' 
-        Button2.Location = New Point(419, 169)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 3
-        Button2.Text = "Reset"
-        Button2.UseVisualStyleBackColor = True
+        btnReset.Location = New Point(410, 199)
+        btnReset.Name = "btnReset"
+        btnReset.Size = New Size(94, 29)
+        btnReset.TabIndex = 3
+        btnReset.Text = "Reset"
+        btnReset.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' txtIPS
         ' 
-        TextBox1.Location = New Point(295, 109)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(218, 27)
-        TextBox1.TabIndex = 4
+        txtIPS.Location = New Point(286, 139)
+        txtIPS.Name = "txtIPS"
+        txtIPS.Size = New Size(218, 27)
+        txtIPS.TabIndex = 4
         ' 
-        ' TextBox2
+        ' txtIPK
         ' 
-        TextBox2.Location = New Point(295, 234)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(218, 27)
-        TextBox2.TabIndex = 5
+        txtIPK.Location = New Point(286, 264)
+        txtIPK.Name = "txtIPK"
+        txtIPK.ReadOnly = True
+        txtIPK.Size = New Size(218, 27)
+        txtIPK.TabIndex = 5
+        ' 
+        ' lblPredikat
+        ' 
+        lblPredikat.AutoSize = True
+        lblPredikat.Location = New Point(286, 321)
+        lblPredikat.Name = "lblPredikat"
+        lblPredikat.Size = New Size(63, 20)
+        lblPredikat.TabIndex = 6
+        lblPredikat.Text = "Predikat"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
+        ClientSize = New Size(695, 450)
+        Controls.Add(lblPredikat)
+        Controls.Add(txtIPK)
+        Controls.Add(txtIPS)
+        Controls.Add(btnReset)
+        Controls.Add(btnTambah)
+        Controls.Add(lblIPKumulatif)
+        Controls.Add(lblIPS)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Kalkulator IP"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents lblIPS As Label
+    Friend WithEvents lblIPKumulatif As Label
+    Friend WithEvents btnTambah As Button
+    Friend WithEvents btnReset As Button
+    Friend WithEvents txtIPS As TextBox
+    Friend WithEvents txtIPK As TextBox
+    Friend WithEvents lblPredikat As Label
 
 End Class
