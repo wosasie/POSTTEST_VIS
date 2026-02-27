@@ -19,10 +19,10 @@
                 lblPredikat.Text = "Cukup"
             ElseIf ipk >= 2.76 And ipk <= 3.0 Then
                 lblPredikat.Text = "Memuaskan"
-            ElseIf ipk > 3.0 Then
+            ElseIf ipk >= 3.01 Then
                 lblPredikat.Text = "Sangat Memuaskan"
             Else
-                lblPredikat.Text = " "
+                lblPredikat.Text = "-"
             End If
 
             txtIPS.Clear()
@@ -37,9 +37,11 @@
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         totalIPS = 0
         jumlahSemester = 0
+        ipk = 0
+
         txtIPS.Clear()
         txtIPK.Clear()
-        lblPredikat.Text = " "
+        lblPredikat.Text = "-"
     End Sub
 
 End Class
