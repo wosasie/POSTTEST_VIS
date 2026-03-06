@@ -12,10 +12,6 @@
         txtGenre.Clear()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
-
-    End Sub
-
     Private Sub lbJudulBuku_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
@@ -27,7 +23,7 @@
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
         Dim judul As String = txtHapusJudul.Text
 
-        For i As Integer = 0 To totalBuku
+        For i As Integer = 0 To totalBuku - 1
             If listBuku(i, 0) = judul Then
                 For j As Integer = i To totalBuku - 2
                     listBuku(j, 0) = listBuku(j + 1, 0)
@@ -42,4 +38,5 @@
         tampilkanBuku(lbBuku)
         txtHapusJudul.Clear()
     End Sub
+
 End Class
