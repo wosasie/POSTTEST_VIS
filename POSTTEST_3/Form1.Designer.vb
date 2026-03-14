@@ -307,7 +307,11 @@ Partial Class Form1
         ' 
         ' dtpDateBirth
         ' 
+        dtpDateBirth.CalendarForeColor = Color.HotPink
         dtpDateBirth.CalendarMonthBackground = Color.LavenderBlush
+        dtpDateBirth.CalendarTitleBackColor = Color.Pink
+        dtpDateBirth.CalendarTitleForeColor = Color.LightPink
+        dtpDateBirth.CalendarTrailingForeColor = Color.PaleVioletRed
         dtpDateBirth.Font = New Font("STSong", 10.1999989F)
         dtpDateBirth.Format = DateTimePickerFormat.Custom
         dtpDateBirth.Location = New Point(396, 93)
@@ -317,6 +321,7 @@ Partial Class Form1
         ' 
         ' txtName
         ' 
+        txtName.BackColor = Color.LavenderBlush
         txtName.Font = New Font("STSong", 10.1999989F)
         txtName.Location = New Point(396, 6)
         txtName.Name = "txtName"
@@ -325,6 +330,7 @@ Partial Class Form1
         ' 
         ' txtAge
         ' 
+        txtAge.BackColor = Color.LavenderBlush
         txtAge.Font = New Font("STSong", 10.1999989F)
         txtAge.Location = New Point(396, 48)
         txtAge.Name = "txtAge"
@@ -333,6 +339,7 @@ Partial Class Form1
         ' 
         ' txtPhoneNo
         ' 
+        txtPhoneNo.BackColor = Color.LavenderBlush
         txtPhoneNo.Font = New Font("STSong", 10.1999989F)
         txtPhoneNo.Location = New Point(396, 139)
         txtPhoneNo.Name = "txtPhoneNo"
@@ -341,6 +348,7 @@ Partial Class Form1
         ' 
         ' txtAddress
         ' 
+        txtAddress.BackColor = Color.LavenderBlush
         txtAddress.Font = New Font("STSong", 10.1999989F)
         txtAddress.Location = New Point(396, 182)
         txtAddress.Name = "txtAddress"
