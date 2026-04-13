@@ -25,7 +25,7 @@ Module DataModule
         Try
             Dim query As String =
                 "SELECT merchCode, merchName, merchTeam, merchCategory, merchStock, merchPrice FROM tb_merchandise " &
-                "WHERE merchCode LIKE @keyword OR merchName LIKE @keyword OR merchTeam LIKE @keyword OR merchCategory LIKE @keyword OR merchStock LIKE @keyword OR merchPrice LIKE @keyword" &
+                "WHERE merchCode LIKE @keyword OR merchName LIKE @keyword OR merchTeam LIKE @keyword OR merchCategory LIKE @keyword OR merchStock LIKE @keyword OR merchPrice LIKE @keyword " &
                 "ORDER BY merchCode ASC"
             Using conn As MySqlConnection = GetConnection()
                 Using da As New MySqlDataAdapter(query, conn)
