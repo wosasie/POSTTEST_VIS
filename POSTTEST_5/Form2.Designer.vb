@@ -33,7 +33,7 @@ Partial Class Form2
         ' Timer1
         ' 
         Timer1.Enabled = True
-        Timer1.Interval = 2000
+        Timer1.Interval = 5000
         ' 
         ' Label1
         ' 

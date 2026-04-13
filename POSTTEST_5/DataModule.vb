@@ -83,7 +83,7 @@ Module DataModule
 
     Public Function SaveMerch(kode As String, nama As String, team As String, kategori As String, stok As Integer, harga As Integer) As Boolean
         Try
-            Dim query As String = "INSERT INTO tb_merchandise (merchCode, merchName, merchTeam, merchCategory, merchStock, merchPrice) VALUES (@code, @name, @team, @category, @stock, @prices)"
+            Dim query As String = "INSERT INTO tb_merchandise (merchCode, merchName, merchTeam, merchCategory, merchStock, merchPrice) VALUES (@code, @name, @team, @category, @stock, @price)"
 
             Using conn As MySqlConnection = GetConnection()
                 conn.Open()
